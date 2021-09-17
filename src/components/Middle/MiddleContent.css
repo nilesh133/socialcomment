@@ -1,0 +1,324 @@
+:root{
+    --col-1: #141414;
+    --col-2: #2790fa;
+}
+
+.stats-container{
+    font-family: 'Noto Sans', sans-serif; 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr); 
+    grid-gap: 2rem;
+}
+
+.stats{
+    border-radius: 0.8rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: inset 5px 5px 10px #0e0e0e,
+            inset -5px -5px 10px #1a1a1a;
+}
+
+.stats-name-icon{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0.5rem;
+}
+
+.stats-name-icon span{
+    font-size: 0.7rem;
+}
+
+.stats-number-progress{
+    display: flex;
+    justify-content: space-between;
+}
+
+.percent{
+    position:relative;
+    
+    border-radius:50%;
+    box-shadow: inset 0 0 50px #000;
+    background:#222;
+    z-index:1000;
+    margin-left: 1.5rem;
+}
+
+.percent .num{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+}
+
+.percent .num h2{
+    color:#777;
+    font-weight:700;
+    font-size: 1rem;
+}
+
+svg{
+    position:relative;
+    width:150px;
+    height:150px;
+    z-index:1000;
+}
+
+svg circle{
+    width:100%;
+    height:100%;
+    fill:none;
+    stroke:#191919;
+    stroke-width:10;
+    stroke-linecap:round;
+    transform:translate(5px,5px);
+}
+
+svg circle:nth-child(2){
+    stroke-dasharray:400;
+    stroke-dashoffset:400;
+}
+
+svg circle:nth-child(2){
+    stroke-dashoffset:calc(400 - (400 * 90) / 100);
+    stroke:var(--col-2);
+}
+
+.percentage-inc-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--col-2);
+}
+
+.percentage-inc-container i{
+    margin-right: 0.3rem;
+    font-weight: bold;
+}
+
+.percentage-inc-container span{
+    font-weight: bold;
+}
+
+.stats-num-left{
+    color: white;
+    font-weight: bold;
+}
+
+.referral-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Noto Sans', sans-serif;
+    padding: 1rem;
+    box-shadow: inset 5px 5px 10px #0e0e0e,
+            inset -5px -5px 10px #1a1a1a;
+}
+
+.referral-heading{
+    display: flex;
+    justify-content: space-between;
+}
+
+.referral-heading h3, h4{
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.referral-heading h4{
+    color: #ff69b4;
+}
+
+.referral-details{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   grid-template-rows: repeat(1, 1fr);
+}
+
+.referral{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem;
+    padding: 0.5rem;
+    box-shadow:  5px 0px 0px rgb(41, 40, 40);
+}
+
+.referral-percentage-inc{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: var(--col-2);
+    font-weight: bold;
+}
+
+.referral-percentage-inc i{
+    margin-right: 0.5rem;
+}
+
+.referral h3, .referral p, .referral h2{
+    margin: 0;
+}
+
+.referral h3{
+    font-size: 0.9rem;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+}
+
+.referral h2{
+    color: white;
+    letter-spacing: 1px;
+}
+
+.referral-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btn-1, .btn-2{
+    border: none;
+    outline: none;
+    padding: 0.7rem;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+}
+
+.btn-1{
+    background-color: var(--col-2);
+}
+
+.btn-2{
+    background-color: #ff69b4;
+}
+
+.chart-container{
+    width: 60%;
+    height: 400px;
+    margin: 1rem;
+}
+
+.chart-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.chart{
+    box-shadow: inset 5px 5px 10px #0e0e0e,
+            inset -5px -5px 10px #1a1a1a;
+}
+.chart-progress-line{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Noto-Sans', sans-serif;
+    font-weight: bold;
+    box-shadow: inset 5px 5px 10px #0e0e0e,
+    inset -5px -5px 10px #1a1a1a;
+    padding: 1.5rem;
+}
+
+.individual-line-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.circle-name-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem;
+}
+
+.chart-circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 0.7rem;
+}
+
+.line-bar-full{
+    position: relative;
+    width: 10rem;
+    height: 0.5rem;
+    border-radius: 2rem;
+    background-color: rgb(63, 62, 62);
+}
+
+.line-bar-half{
+    position: absolute;
+    height: 0.5rem;
+    border-radius: 2rem;
+}
+
+.line-1{
+    color: var(--col-2);
+}
+
+.line-1 .chart-circle{
+    background-color: var(--col-2);
+}
+
+.line-1 .line-bar-half{
+    width: 70%;
+    background-color: var(--col-2);
+}
+
+.line-2{
+    color: #ff69b4;
+}
+
+.line-2 .chart-circle{
+    background-color: #ff69b4;
+}
+
+.line-2 .line-bar-half{
+    width: 90%;
+    background-color: #ff69b4;
+}
+
+.line-3{
+    color: purple;
+}
+
+.line-3 .chart-circle{
+    background-color: purple;
+}
+
+.line-3 .line-bar-half{
+    width: 10%;
+    background-color: purple;
+}
+
+.line-4{
+    color: cyan;
+}
+
+.line-4 .chart-circle{
+    background-color: cyan;
+}
+
+.line-4 .line-bar-half{
+    width: 40%;
+    background-color: cyan;
+}

@@ -1,0 +1,87 @@
+:root{
+    --col-1: #141414;
+    --col-2: #2790fa;
+}
+
+.applicants-container{
+    font-family: 'Noto Sans', sans-serif;
+    padding: 1rem;
+    width: 30%;
+    border-radius: 28px;
+    box-shadow: inset 5px 5px 10px #0e0e0e,
+            inset -5px -5px 10px #1a1a1a;
+}
+
+.applicants-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.applicants-heading{
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.applicants-heading h3{
+    font-size: 0.8rem;
+    color: white;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.applicants-image{
+    background-image: url("../Applicants/images/applicants.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 15rem;
+}
+
+.applicants-name-work{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.applicants-name-work i{
+    color: white;
+    font-size: 1.3rem;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+
+.applicants-name h3{
+    margin: 0;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.applicants-name p{
+    margin: 0;
+    color: white;
+    letter-spacing: 1px;
+    font-size: 0.7rem;
+}
+
+.applicants-name p span{
+    color: var(--col-2);
+}
+
+.applicants-icon-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.applicants-icon-container i{
+    margin-right: 1.3rem;
+    cursor: pointer;
+}
